@@ -1,0 +1,16 @@
+C:\Users\xando\source\repos\Exercises6-13_Loops_Expressions_Control\Exercises6-13_Loops_Expressions_Control\bin\Debug\net5.0\Exercises6-13_Loops_Expressions_Control.exe
+C:\Users\xando\source\repos\Exercises6-13_Loops_Expressions_Control\Exercises6-13_Loops_Expressions_Control\bin\Debug\net5.0\Exercises6-13_Loops_Expressions_Control.deps.json
+C:\Users\xando\source\repos\Exercises6-13_Loops_Expressions_Control\Exercises6-13_Loops_Expressions_Control\bin\Debug\net5.0\Exercises6-13_Loops_Expressions_Control.runtimeconfig.json
+C:\Users\xando\source\repos\Exercises6-13_Loops_Expressions_Control\Exercises6-13_Loops_Expressions_Control\bin\Debug\net5.0\Exercises6-13_Loops_Expressions_Control.runtimeconfig.dev.json
+C:\Users\xando\source\repos\Exercises6-13_Loops_Expressions_Control\Exercises6-13_Loops_Expressions_Control\bin\Debug\net5.0\Exercises6-13_Loops_Expressions_Control.dll
+C:\Users\xando\source\repos\Exercises6-13_Loops_Expressions_Control\Exercises6-13_Loops_Expressions_Control\bin\Debug\net5.0\ref\Exercises6-13_Loops_Expressions_Control.dll
+C:\Users\xando\source\repos\Exercises6-13_Loops_Expressions_Control\Exercises6-13_Loops_Expressions_Control\bin\Debug\net5.0\Exercises6-13_Loops_Expressions_Control.pdb
+C:\Users\xando\source\repos\Exercises6-13_Loops_Expressions_Control\Exercises6-13_Loops_Expressions_Control\obj\Debug\net5.0\Exercises6-13_Loops_Expressions_Control.csproj.AssemblyReference.cache
+C:\Users\xando\source\repos\Exercises6-13_Loops_Expressions_Control\Exercises6-13_Loops_Expressions_Control\obj\Debug\net5.0\Exercises6-13_Loops_Expressions_Control.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\xando\source\repos\Exercises6-13_Loops_Expressions_Control\Exercises6-13_Loops_Expressions_Control\obj\Debug\net5.0\Exercises6-13_Loops_Expressions_Control.AssemblyInfoInputs.cache
+C:\Users\xando\source\repos\Exercises6-13_Loops_Expressions_Control\Exercises6-13_Loops_Expressions_Control\obj\Debug\net5.0\Exercises6-13_Loops_Expressions_Control.AssemblyInfo.cs
+C:\Users\xando\source\repos\Exercises6-13_Loops_Expressions_Control\Exercises6-13_Loops_Expressions_Control\obj\Debug\net5.0\Exercises6-13_Loops_Expressions_Control.csproj.CoreCompileInputs.cache
+C:\Users\xando\source\repos\Exercises6-13_Loops_Expressions_Control\Exercises6-13_Loops_Expressions_Control\obj\Debug\net5.0\Exercises6-13_Loops_Expressions_Control.dll
+C:\Users\xando\source\repos\Exercises6-13_Loops_Expressions_Control\Exercises6-13_Loops_Expressions_Control\obj\Debug\net5.0\ref\Exercises6-13_Loops_Expressions_Control.dll
+C:\Users\xando\source\repos\Exercises6-13_Loops_Expressions_Control\Exercises6-13_Loops_Expressions_Control\obj\Debug\net5.0\Exercises6-13_Loops_Expressions_Control.pdb
+C:\Users\xando\source\repos\Exercises6-13_Loops_Expressions_Control\Exercises6-13_Loops_Expressions_Control\obj\Debug\net5.0\Exercises6-13_Loops_Expressions_Control.genruntimeconfig.cache
