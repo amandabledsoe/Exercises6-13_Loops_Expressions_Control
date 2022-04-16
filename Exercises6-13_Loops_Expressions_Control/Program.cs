@@ -41,25 +41,23 @@ namespace Exercises6_13_Loops_Expressions_Control
                                 break;
                             case 9:
                                 Console.Clear();
-                                // Prompt the user to enter a language. Based on the language the user input, display "Hello, World!" in that language.
-                                // Use a switch statement to choose what to display.
+                                DoExercise9();
                                 break;
                             case 10:
                                 Console.Clear();
-                                // Determine whether the user is tall enough to ride a roller coaster. Prompt the user to enter her height in inches.
-                                // If she is less than 54 inches tall, notify her that she cannot ride the Raptor. If she is at least 54 inches tall, notify her that she can ride the Raptor.
+                                DoExercise10();
                                 break;
                             case 11:
                                 Console.Clear();
-                                // Use a for loop to output all the numbers from 0 to 9.
+                                DoExercise11();
                                 break;
                             case 12:
                                 Console.Clear();
-                                // Output all the numbers from 9 to 0. Use a for loop to output all the numbers from 9 to 0.
+                                DoExercise12();
                                 break;
                             case 13:
                                 Console.Clear();
-                                // call a methodPrompt the user for a number. Use a for loop to output all the numbers from that number to 0.
+                                DoExercise13();
                                 break;
                         }
                         runningProgram = RunProgramAgainPrompt();
@@ -524,6 +522,348 @@ namespace Exercises6_13_Loops_Expressions_Control
             Console.WriteLine("Press Enter to Continue.");
             Console.ReadLine();
             Console.Clear();
+        }
+        static void DoExercise9()
+        {
+            Console.WriteLine("EXERCISE 9:");
+            Console.WriteLine("------------------------------");
+            Console.WriteLine("Prompt the user to enter a language. Based on the language the user input, display 'Hello, World!' in that language." +
+                "Use a switch statement to choose what to display.");
+            Console.WriteLine("");
+            Console.WriteLine("Press Enter to begin this exercise.");
+            Console.ReadLine();
+            Console.Clear();
+
+            bool doingExercise9 = true;
+            while (doingExercise9)
+            {
+                Console.WriteLine("Choose one of the following languges to print 'Hello World' in that language:");
+                Console.WriteLine("English -- Spanish -- French -- German -- Portuguese");
+                Console.WriteLine("");
+                Console.Write("Enter your choice: ");
+                string choice = Console.ReadLine().ToLower();
+                switch(choice)
+                {
+                    case "english":
+                        Console.WriteLine("");
+                        Console.WriteLine("Hello World!");
+                        Console.WriteLine("");
+                        break;
+
+                    case "spanish":
+                        Console.WriteLine("");
+                        Console.WriteLine("Hola Mundo!");
+                        Console.WriteLine("");
+                        break;
+
+                    case "french":
+                        Console.WriteLine("");
+                        Console.WriteLine("Bonjour le monde!");
+                        Console.WriteLine("");
+                        break;
+
+                    case "german":
+                        Console.WriteLine("");
+                        Console.WriteLine("Hallo Welt!");
+                        Console.WriteLine("");
+                        break;
+
+                    case "portuguese":
+                        Console.WriteLine("");
+                        Console.WriteLine("Olá Mundo!");
+                        Console.WriteLine("");
+                        break;
+
+                    default:
+                        Console.WriteLine("");
+                        Console.WriteLine("Sorry, that doesn't appear to be a language we can translate.");
+                        Console.WriteLine("");
+                        break;
+                }
+
+                bool askingUser = true;
+                while (askingUser)
+                {
+                    Console.WriteLine("Would you like to translate 'Hello World' into another language?");
+                    Console.Write("Enter 'y' or 'yes' to continue, or enter 'n' or 'no' to stop: ");
+                    string answer = Console.ReadLine().ToLower();
+                    if (answer == "y" || answer == "y")
+                    {
+                        Console.WriteLine("");
+                        askingUser = false;
+                        doingExercise9 = true;
+                    }
+                    else if (answer == "n" || answer == "no")
+                    {
+                        askingUser = false;
+                        doingExercise9 = false;
+                    }
+                    else
+                    {
+                        Console.WriteLine("");
+                        Console.WriteLine("I'm sorry, I didn't understand that response. Please try again.");
+                        Console.WriteLine("");
+                        askingUser = true;
+                    }
+                }
+            }
+            Console.WriteLine("");
+            Console.WriteLine("Press Enter to Continue.");
+            Console.ReadLine();
+            Console.Clear();
+        }
+        static void DoExercise10()
+        {
+            Console.WriteLine("EXERCISE 10:");
+            Console.WriteLine("------------------------------");
+            Console.WriteLine("Determine whether the user is tall enough to ride a roller coaster. Prompt the user to enter her height in inches.\n" +
+                "If she is less than 54 inches tall, notify her that she cannot ride the Raptor.\n" +
+                "If she is at least 54 inches tall, notify her that she can ride the Raptor.");
+            Console.WriteLine("");
+            Console.WriteLine("Press Enter to begin this exercise.");
+            Console.ReadLine();
+            Console.Clear();
+
+            bool doingExercise10 = true;
+            while (doingExercise10)
+            {
+                Console.WriteLine("Welcome to The Raptor roller coaster!");
+                Console.Write("Please enter your height in inches: ");
+                string entry = Console.ReadLine();
+                bool isANumber = int.TryParse(entry, out int height);
+                if(isANumber)
+                {
+                    if(height < 54)
+                    {
+                        Console.WriteLine("");
+                        Console.WriteLine("It looks like you are not tall enough and cannot ride this ride. :(");
+                        Console.WriteLine("");
+                    }
+                    else if (height >= 54)
+                    {
+                        Console.WriteLine("");
+                        Console.WriteLine("Excellent - you are tall enough to ride! Let's get you seated & belted in!");
+                        Console.WriteLine("");
+                    }
+                    bool askingUser = true;
+                    while (askingUser)
+                    {
+                        Console.WriteLine("Would you like to do this exercise again?");
+                        Console.Write("Enter 'y' or 'yes' to continue, or enter 'n' or 'no' to stop: ");
+                        string answer = Console.ReadLine().ToLower();
+                        if (answer == "y" || answer == "y")
+                        {
+                            Console.WriteLine("");
+                            askingUser = false;
+                            doingExercise10 = true;
+                        }
+                        else if (answer == "n" || answer == "no")
+                        {
+                            askingUser = false;
+                            doingExercise10 = false;
+                        }
+                        else
+                        {
+                            Console.WriteLine("");
+                            Console.WriteLine("I'm sorry, I didn't understand that response. Please try again.");
+                            Console.WriteLine("");
+                            askingUser = true;
+                        }
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("");
+                    Console.WriteLine("Sorry, that doesn't appear to be a number. Please try again.");
+                    Console.WriteLine("");
+                    doingExercise10 = true;
+                }
+            }
+            Console.WriteLine("");
+            Console.WriteLine("Press Enter to Continue.");
+            Console.ReadLine();
+            Console.Clear();
+        }
+        static void DoExercise11()
+        {
+            Console.WriteLine("EXERCISE 11:");
+            Console.WriteLine("------------------------------");
+            Console.WriteLine("Use a for loop to output all the numbers from 0 to 9.");
+            Console.WriteLine("");
+            Console.WriteLine("Press Enter to begin this exercise.");
+            Console.ReadLine();
+            Console.Clear();
+
+            bool doingExercise11 = true;
+            while (doingExercise11)
+            {
+                Console.WriteLine("Below are the numbers 0-9 printed.");
+                Console.WriteLine("");
+                for(int i = 0; i <= 9; i++)
+                {
+                    Console.WriteLine(i);
+                }
+                Console.WriteLine("");
+
+                bool askingUser = true;
+                while (askingUser)
+                {
+                    Console.WriteLine("Would you like to do this exercise again?");
+                    Console.Write("Enter 'y' or 'yes' to continue, or enter 'n' or 'no' to stop: ");
+                    string answer = Console.ReadLine().ToLower();
+                    if (answer == "y" || answer == "y")
+                    {
+                        Console.WriteLine("");
+                        askingUser = false;
+                        doingExercise11 = true;
+                    }
+                    else if (answer == "n" || answer == "no")
+                    {
+                        askingUser = false;
+                        doingExercise11 = false;
+                    }
+                    else
+                    {
+                        Console.WriteLine("");
+                        Console.WriteLine("I'm sorry, I didn't understand that response. Please try again.");
+                        Console.WriteLine("");
+                        askingUser = true;
+                    }
+                }
+            }
+            Console.WriteLine("");
+            Console.WriteLine("Press Enter to Continue.");
+            Console.ReadLine();
+            Console.Clear();
+        }
+        static void DoExercise12()
+        {
+            Console.WriteLine("EXERCISE 12:");
+            Console.WriteLine("------------------------------");
+            Console.WriteLine("Output all the numbers from 9 to 0. Use a for loop to output all the numbers from 9 to 0.");
+            Console.WriteLine("");
+            Console.WriteLine("Press Enter to begin this exercise.");
+            Console.ReadLine();
+            Console.Clear();
+
+            bool doingExercise12 = true;
+            while (doingExercise12)
+            {
+                Console.WriteLine("Below are the numbers 9-0 printed.");
+                Console.WriteLine("");
+                for (int i = 9; i >= 0; i--)
+                {
+                    Console.WriteLine(i);
+                }
+                Console.WriteLine("");
+
+                bool askingUser = true;
+                while (askingUser)
+                {
+                    Console.WriteLine("Would you like to translate 'Hello World' into another language?");
+                    Console.Write("Enter 'y' or 'yes' to continue, or enter 'n' or 'no' to stop: ");
+                    string answer = Console.ReadLine().ToLower();
+                    if (answer == "y" || answer == "y")
+                    {
+                        Console.WriteLine("");
+                        askingUser = false;
+                        doingExercise12 = true;
+                    }
+                    else if (answer == "n" || answer == "no")
+                    {
+                        askingUser = false;
+                        doingExercise12 = false;
+                    }
+                    else
+                    {
+                        Console.WriteLine("");
+                        Console.WriteLine("I'm sorry, I didn't understand that response. Please try again.");
+                        Console.WriteLine("");
+                        askingUser = true;
+                    }
+                }
+            }
+            Console.WriteLine("");
+            Console.WriteLine("Press Enter to Continue.");
+            Console.ReadLine();
+            Console.Clear();
+        }
+        static void DoExercise13()
+        {
+            Console.WriteLine("EXERCISE 13:");
+            Console.WriteLine("------------------------------");
+            Console.WriteLine("Call a method. Prompt the user for a number. Use a for loop to output all the numbers from that number to 0.");
+            Console.WriteLine("");
+            Console.WriteLine("Press Enter to begin this exercise.");
+            Console.ReadLine();
+            Console.Clear();
+
+            bool doingExercise13 = true;
+            while (doingExercise13)
+            {
+                int num = DoSupportingExercise13();
+                Console.WriteLine("");
+                for (int i = num; i >= 0; i--)
+                {
+                    Console.WriteLine(i);
+                }
+                Console.WriteLine("");
+
+                bool askingUser = true;
+                while (askingUser)
+                {
+                    Console.WriteLine("Would you like to do this exercise again?");
+                    Console.Write("Enter 'y' or 'yes' to continue, or enter 'n' or 'no' to stop: ");
+                    string answer = Console.ReadLine().ToLower();
+                    if (answer == "y" || answer == "y")
+                    {
+                        Console.WriteLine("");
+                        askingUser = false;
+                        doingExercise13 = true;
+                    }
+                    else if (answer == "n" || answer == "no")
+                    {
+                        askingUser = false;
+                        doingExercise13 = false;
+                    }
+                    else
+                    {
+                        Console.WriteLine("");
+                        Console.WriteLine("I'm sorry, I didn't understand that response. Please try again.");
+                        Console.WriteLine("");
+                        askingUser = true;
+                    }
+                }
+            }
+            Console.WriteLine("");
+            Console.WriteLine("Press Enter to Continue.");
+            Console.ReadLine();
+            Console.Clear();
+        }
+        static int DoSupportingExercise13()
+        {
+            bool doingExercise13Support = true;
+            int confirmedNumber;
+            while(doingExercise13Support)
+            {
+                Console.WriteLine("Enter a whole number, and I will count down from that number to 0.");
+                Console.WriteLine("");
+                Console.Write("Enter your number: ");
+                string number = Console.ReadLine();
+                bool isANumber = int.TryParse(number, out confirmedNumber);
+                if (isANumber)
+                {
+                    return confirmedNumber;
+                }
+                else
+                {
+                    Console.WriteLine("");
+                    Console.WriteLine("Sorry, that doesnt appear to be a number. Please try again.");
+                    Console.WriteLine("");
+                    return 0;
+                }
+            }
+            return 0;
         }
     }
 }
